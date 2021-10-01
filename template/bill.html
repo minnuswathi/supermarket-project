@@ -1,0 +1,27 @@
+<h1>customer Bill</h1>
+<table border="1">
+
+  <tr>
+    <th>customer_name</th>
+    <th>customer_mobile</th>
+    <th>customer_address</th>
+    <th>unit price</th>
+    <th>quantity</th>
+    <th>date</th>
+    <th>item_name</th>
+    <th>total_price</th>
+  </tr>
+  <tr>
+    {% for i in bill %}
+    <td>{{i.customer_name}}</td>
+    <td>{{i.customer_mobile}}</td>
+    <td>{{i.customer_address}}</td>
+    <td>{{i.unit_price}}</td>
+    <td>{{i.quantity}}</td>
+    <td>{{i.date}}</td>
+    <td>{{i.item_name}}</td>
+    <td>{{i.total_price}}</td>
+  </tr>
+{% endfor %}
+
+</table>
